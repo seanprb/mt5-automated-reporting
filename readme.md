@@ -1,6 +1,6 @@
 # MT5 Automated Reporting
 
-A Python tool that connects to a MetaTrader 5 (MT5) account, pulls trade and account history, calculates performance and risk metrics, and generates a formatted Excel report — complete with an equity curve chart.
+A Python tool that connects to a MetaTrader 5 (MT5) account, pulls trade and account history, calculates performance and risk metrics, and generates a formatted Excel report.
 
 ## Features
 
@@ -8,7 +8,6 @@ A Python tool that connects to a MetaTrader 5 (MT5) account, pulls trade and acc
 - **Configurable reporting period** — custom date range, or defaults to a rolling 3-year history
 - **Performance analytics** — initial capital, total trades, net P/L, net P/L %, win rate
 - **Risk metrics** — average P/L per trade, final portfolio value
-- **Equity curve chart** generated with Plotly
 - **Excel report output** with Summary and Trades sheets, automatically saved with the reporting period in the filename
 - **Optional standalone executable** build via PyInstaller (no Python/IDE required to run)
 
@@ -51,9 +50,8 @@ The tool will then:
 2. Extract trade and account history (a full 3-year history for capital/risk detection, plus the chosen reporting period for trade-level analysis)
 3. Clean and transform the raw deal data into a trade log
 4. Calculate performance and risk metrics
-5. Generate an equity curve chart
-6. Write an Excel report to `reports/excel/`
-7. Disconnect from MT5
+5. Write an Excel report to `reports/excel/`
+6. Disconnect from MT5
 
 ## Configuration
 
@@ -101,7 +99,7 @@ Each report contains:
     ├── transform.py         # Cleans raw deals into a usable trade log
     ├── analytics.py         # Performance metrics (P/L, win rate, etc.)
     ├── risk.py               # Risk metrics (average P/L, final portfolio value)
-    ├── charts.py             # Equity curve chart generation
+    ├── charts.py             # Equity curve chart generation (TBA)
     └── report_excel.py      # Builds and saves the final Excel report
 ```
 
