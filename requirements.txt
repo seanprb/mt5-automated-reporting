@@ -1,0 +1,13 @@
+MetaTrader5
+pandas
+numpy
+plotly
+openpyxl
+jinja2
+pyyaml
+python-dateutil
+rich
+pytest
+black
+isort
+pyinstaller
